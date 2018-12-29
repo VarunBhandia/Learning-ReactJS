@@ -9,27 +9,30 @@ class Mount extends Component {
         }
       }
       
-    
       getData(){
-        setTimeout(() => {
+        
           console.log('Our data is fetched');
           this.setState({
             data: 'Hello WallStreet'
           })
-        }, 1000)
+       
       }
     
       componentDidMount(){
+        console.log('componentDidMount');
+
         this.getData();
       }
 
       componentWillMount(){
-        console.log('First this called');
+        console.log('componentWillMount');
+        this.getData();
       }
     
       render() {
         return(
           <div>
+              {console.log('render')}
           {this.state.data}
         </div>
         )
