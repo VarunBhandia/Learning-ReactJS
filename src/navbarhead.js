@@ -19,7 +19,7 @@ class NavbarHeader extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">Student's Club</a>
+              <a href="#brand">Rockmetric</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
